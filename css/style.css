@@ -1,0 +1,585 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1 , h2 , h3 , h4 , h5 , h6{
+    font-family: 'Montserrat', sans-serif;
+} 
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+
+/* nav */
+
+nav{
+    background-color: #fff;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+    ;
+}
+nav a.nav-link{
+    color: #111 !important;
+    font-weight: 400;
+    position: relative;
+}
+.navbar-nav .nav-link::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: rgb(2, 2, 2);
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    transition: all .5s ;
+    -webkit-transition: all .5s ;
+    -moz-transition: all .5s ;
+    -ms-transition: all .5s ;
+    -o-transition: all .5s ;
+}
+.navbar-nav .nav-link.active::after{
+width: 85%;
+}
+
+
+
+header{
+    background-image: url(../imgs/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+header .layer{
+    background-color:rgba(0, 0, 0, 0.574);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+nav .nav-link{
+    color: white !important;
+    position: relative;
+}
+.home-content .header-text h5{
+     font-size: 50px;
+     font-weight: 800;
+     margin-bottom: 10px;
+}
+.home-content .header-text p{
+     font-weight: 200;
+     font-size: 60px;
+}
+.home-content .header-text p::after{
+    content: "|";
+    padding-top: 10px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    animation-name: daniels;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+@keyframes daniels {
+    0% {content: " |"}
+    1% {content: " L| "}
+    2% {content: " La| "}
+    3% {content: " Lar| "}
+    4% {content: " Larr| "}
+    5% {content: " Larry | "}
+    6% {content: " Larry D| "}
+    7% {content: " Larry Da| "}
+    8% {content: " Larry Dan| "}
+    9% {content: " Larry Dani| "}
+    10% {content: " Larry Danie| "}
+    11% {content: " Larry Daniel| "}
+    12% {content: " Larry Daniels| "}
+    13% {content: " Larry Daniel| "}
+    14% {content: " Larry Danie| "}
+    15% {content: " Larry Dani| "}
+    16% {content: " Larry Dan| "}
+    17% {content: " Larry Da| "}
+    18% {content: " Larry D| "}
+    19% {content: " Larry| "}
+    20% {content: " Larr| "}
+    21% {content: " Lar| "}
+    22% {content: " La| "}
+    23% {content: " L| "}
+    24% {content: " | "}
+    25% {content: " | "}
+    26% {content: " F| "}
+    27% {content: " Fr| "}
+    28% {content: " Fre| "}
+    29% {content: " Free| "}
+    30% {content: " Freel| "}
+    31% {content: " Freela| "}
+    32% {content: " Freelan| "}
+    33% {content: " Freelanc| "}
+    34% {content: " Freelance| "}
+    35% {content: " Freelancer.| "}
+    36% {content: " Freelancer| "}
+    37% {content: " Freelance| "}
+    38% {content: " Freelanc| "}
+    39% {content: " Freelan| "}
+    40% {content: " Freela| "}
+    41% {content: " Freel| "}
+    42% {content: " Free| "}
+    43% {content: " Fre| "}
+    44% {content: " Fr| "}
+    45% {content: " F| "}
+    46% {content: " | "}
+    47% {content: " D| "}
+    48% {content: " De| "}
+    49% {content: " Des| "}
+    50% {content: " Desi| "}
+    51% {content: " Desig| "}
+    52% {content: " Design| "}
+    53% {content: " Designe| "}
+    54% {content: " Designer| "}
+    55% {content: " Designe| "}
+    57% {content: " Design| "}
+    58% {content: " Desig| "}
+    59% {content: " Desi| "}
+    60% {content: " Des| "}
+    61% {content: " De| "}
+    62% {content: " D| "}
+    63% {content: " | "}
+    64% {content: " D| "}
+    65% {content: " De| "}
+    66% {content: " Dev| "}
+    67% {content: " Devl| "}
+    68% {content: " Devlo| "}
+    69% {content: " Devlop| "}
+    70% {content: " Devlope| "}
+    80% {content: " Devloper| "}
+    81% {content: " Devlope| "}
+    82% {content: " Devlop| "}
+    83% {content: " Devlo| "}
+    84% {content: " Devl| "}
+    85% {content: " Dev| "}
+    86% {content: " De| "}
+    88% {content: " D| "}
+    89% {content: " | "}
+    90% {content: " | "}
+    100% {content: " | "}
+}
+
+
+.home-content .header-icon span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* about */
+.progress, .progress-stacked {
+   height: 1.5rem;
+}
+.skills h6{
+    font-size: 13px;
+}
+
+.hero-img{
+    position: relative;
+    padding: 0 0 0 30px;
+}
+ .hero-img::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+ }
+ .about .content .sub-title{
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+ }
+ .about .content p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    margin-top: 20px;
+ }
+.mb-30{
+    margin-bottom: 30px !important;
+}
+.button:hover{
+     background-color: #fff;
+     color: black;
+}
+.button-2:hover{
+    background-color:#212529;
+    color: #fff;
+}
+
+/* services */
+.head h3{
+    font-size: 40px;
+    font-weight: 900;
+    position: relative;
+    display: inline-block;
+
+}
+.head h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+
+.services{
+    background-color: #f7f7f7;
+}
+.services-box{
+    background-color: #fff;
+    padding: 50px 20px;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.icon-services{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+    
+}
+.icon-services:hover{
+    background-color: #212529;
+    color: #fff;
+}
+.services-box:hover .icon-services{
+    background-color: #212529;
+    color: #fff;
+}
+.services-content h6{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.services-content p{
+    font-size: 14px;
+    word-spacing: 2px;
+    color: #748182;
+    line-height: 1.6;
+    
+}
+
+/* Portfolio */
+
+
+
+.portfolio .nav .nav-link{
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+.portfolio .nav .nav-link::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: rgb(2, 2, 2);
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    transition: all .5s ;
+}
+.portfolio .nav .nav-link.active::after{
+    width: 69%;
+    }
+
+
+.portfolio .item-img {
+    position: relative;
+    overflow: hidden;
+  }
+  .portfolio .item-img:hover .item-img-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+  .portfolio .item-img:hover h6,
+  .portfolio .item-img:hover .icons {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .portfolio .item-img h6 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 15px;
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .portfolio .item-img .icon i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+  }
+  .portfolio .item-img .icon i:hover {
+    background: transparent;
+    color: #000;
+  }
+  .portfolio .item-img-overlay {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 2;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  .v-middle{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+  }
+
+/* Testimonials */
+
+.testimonials{
+    background-color:#f7f7f7 ;
+}
+.testimonials .item p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.testimonials .item h6{
+   font-size: 16px;
+   font-weight: 600;
+}
+.testimonials .item span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}
+.testimonials .carousel-indicators button{
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   margin-top: 20px;
+   background-color: #869791;
+}
+
+.counter .counter-icon{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.counter .counter-num h3{
+    font-size: 33px;
+   font-weight: 900;
+   margin-bottom: 15px;
+   
+}
+.counter .counter-num p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+ /* team */
+ .team{
+    background-color: #f4f4f4;
+
+ }
+ .team-item{
+    background-color: rgba(52, 52, 52,.8);
+    margin-bottom: 10px;
+    border-radius: 6px;
+    
+}
+.team-item .item-text{
+    color: #fff;
+    padding: 25px;
+}
+.team-item .item-text h5{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.team-item .social ul li a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width:40px;
+    height: 40px;
+    line-height: 35px;
+    border-radius: 50%;
+    background:black;
+    color: #fff;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.team-item .social ul li a:hover{
+   background-color: #fff;
+   color: #111;
+}
+.team-item .social ul li {
+    padding: 10px;
+}
+.team-item .social ul {
+    text-align: center;
+    position: relative;
+    top: 190px;
+   
+}
+.team-item .item-image{
+    position: relative;
+    overflow: hidden;
+}
+
+.team-item .social{
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    text-align: center;
+    inset: 5px;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+}
+.team-item:hover .social{
+    cursor: pointer;
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+    -webkit-transform: rotateY(0deg) scale(1, 1);
+    -moz-transform: rotateY(0deg) scale(1, 1);
+    -ms-transform: rotateY(0deg) scale(1, 1);
+    -o-transform: rotateY(0deg) scale(1, 1);
+}
+.team-item .item-image:hover img {
+    transform: scale(1.2);
+    
+}
+.team-item .item-image img {
+    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+}
+
+/* contact */
+.icon-contact{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #f4f4f4;
+    border-radius: 50%;
+}
+.icon-contact:hover{
+    background-color: #111;
+    color: #fff;
+    cursor: pointer;
+}
+.contact-info:hover .icon-contact{
+    background-color: #111;
+    color: #fff;
+    cursor: pointer;
+
+}
+.contact .contact-text h6{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.contact .contact-text p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.form-control{
+    background-color: #f4f4f4;
+    border: none;
+    padding: 10px;
+
+}
+input , textarea:focus{
+    outline: none;
+}
+.form-contact{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+.contact button{
+    padding: 10px 40px;
+}
+.contact button:hover{
+       background-color: #fff !important;
+       color: #111;
+}
+
+footer{
+    background: #1c1c1c;
+    padding: 30px;
+}
+footer p{
+    font-size: 13px;
+    word-spacing: 2px;
+    line-height: 1.6;
+    color: #748182 !important;
+}
+
